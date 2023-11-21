@@ -10,8 +10,6 @@ public class Answer {
     protected static final String enterOnlyNumb = "Enter your move (1-9): ";
     protected static final String betweenLines = "-----------";
 
-
-
     private String answerOutString;
 
     public void answerOut(String answerOutString) {
