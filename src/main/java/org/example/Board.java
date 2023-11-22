@@ -4,7 +4,6 @@ import static org.example.Answer.*;
 import java.util.Scanner;
 
 public class Board {
-    static Answer answer = new Answer();
     static byte input;
     static byte rand;
     static byte i;
@@ -12,9 +11,9 @@ public class Board {
 
     public static void displayBoard() {
         System.out.println("\n\n " + box[0] + " | " + box[1] + " | " + box[2] + " ");
-        answer.answerOut(betweenLines);
+        new Answer(betweenLines);
         System.out.println(" " + box[3] + " | " + box[4] + " | " + box[5] + " ");
-        answer.answerOut(betweenLines);
+        new Answer(betweenLines);
         System.out.println(" " + box[6] + " | " + box[7] + " | " + box[8] + " \n");
     }
 

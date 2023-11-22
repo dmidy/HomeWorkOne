@@ -10,14 +10,7 @@ public class Answer {
     protected static final String enterOnlyNumb = "Enter your move (1-9): ";
     protected static final String betweenLines = "-----------";
 
-    private String answerOutString;
-
-    public void answerOut(String answerOutString) {
-        this.answerOutString = answerOutString;
-        if (answerOutString != null) {
-            System.out.println(answerOutString);
-        } else {
-            System.out.println("Error 404");
-        }
+    public Answer(String answer) {
+        System.out.println(answer);
     }
 }

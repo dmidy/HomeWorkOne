@@ -10,22 +10,22 @@ public class Checker {
     public static void userCheck() {
         Scanner scan = new Scanner(System.in);
         while (true) {
-            answer.answerOut(enterOnlyNumb);
+            new Answer(enterOnlyNumb);
             try {
                 input = scan.nextByte();
                 if (input > 0 && input < 10) {
                     if (box[input - 1] == 'X' || box[input - 1] == 'O') {
-                        answer.answerOut(anotherEnterText);
+                        new Answer(anotherEnterText);
                     } else {
                         box[input - 1] = 'X';
                         break;
                     }
                 } else {
-                    answer.answerOut(invalidInputText);
+                    new Answer(invalidInputText);
                 }
             } catch (java.util.InputMismatchException e) {
                 scan.nextLine();
-                answer.answerOut(invalidInputText);
+                new Answer(invalidInputText);
             }
         }
     }
